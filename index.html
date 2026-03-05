@@ -1,156 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>ily my pacar aku suami gw</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ily</title>
 
-    <head>
-  <meta charset="UTF-8">
-  <title>...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-<style>
-body {
-    margin: 0;
-    height: 100vh;
-    background: linear-gradient(180deg, #f6efed, #f9efef);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-}
-
-.container {
-    text-align: center;
-    color: #875246;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-/* checkbox hack */
-#open {
-    display: none;
-}
-
-/* envelope */
-.envelope {
-    width: 330px;
-    height: 210px;
-    background: #e9cfc4;
-    border-radius: 14px;
-    position: relative;
-    margin: auto;
-    cursor: pointer;
-    box-shadow: 0 12px 30px rgba(158, 154, 154, 0.18);
-    overflow: hidden;
-    transition: transform 0.4s ease;
-}
-
-/* little pop animation */
-.envelope:hover {
-    transform: scale(1.03);
-}
-
-/* flap */
-.flap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #af7f75;
-    clip-path: polygon(0 0, 50% 55%, 100% 0);
-    transform-origin: top;
-    transition: transform 0.9s ease;
-    z-index: 4;
-}
-
-/* letter */
-.letter {
-    position: absolute;
-    bottom: -140%;
-    left: 12px;
-    width: calc(100% - 24px);
-    height: 170px;
-    background: #ffffff;
-    border-radius: 10px;
-    padding: 16px;
-    box-sizing: border-box;
-    color: #4e63c3;
-    font-size: 12px;
-    line-height: 1.45;
-    transition: bottom 1s cubic-bezier(.25,.8,.25,1);
-    z-index: 2;
-    overflow-y: auto;
-}
-
-/* heart decoration */
-.heart {
-    position: absolute;
-    bottom: 10px;
-    right: 15px;
-    font-size: 18px;
-    opacity: 0.7;
-}
-
-/* OPEN STATE */
-#open:checked + label .flap {
-    transform: rotateX(180deg);
-}
-
-#open:checked + label .letter {
-    bottom: 12px;
-}
-
-/* hint */
-.hint {
-    margin-top: 14px;
-    font-size: 13px;
-    opacity: 0.8;
-}
-
-/* audio */
-audio {
-    margin-top: 20px;
-    width: 300px;
-}
-</style>
+  <!-- Pakai file CSS kamu -->
+  <link rel="stylesheet" href="./anselmygenve.css" />
 </head>
 
 <body>
+  <div class="container">
+    <h2>@Sherlocck</h2>
 
-<div class="container">
-    <h2> @Sherlocck</h2>
+    <!-- penting: id="envelope" -->
+    <div class="envelope" id="envelope" role="button" tabindex="0" aria-expanded="false">
+      <div class="flap"></div>
 
-    <input type="checkbox" id="open">
+      <div class="letter">
+        I can't solely contain how I feel, neither can i quite fathom. If it's love or just admiration. I
+        have no clue. But i know, with you, I will never feel blue. Delicate droplets of rain and the
+        raging ocean you were, disguised as a single soul, that none deserving would refuse to behold.
+        <br><br>
+        Ambivalent, I remain about you. Amorphous, my love for you exists. But darling, I promise,
+        it is as ardent and blatant as destiny itself persists.
+      </div>
 
-    <label for="open">
-        <div class="envelope">
-            <div class="flap"></div>
-
-            <div class="letter">
-I can't solely contain how I feel, neither can i quite fathom. If it's love or just admiration. I have no clue. But i know, with you, I will never feel blue. Delicate droplets of rain  and the raging ocean you were, disguised as a single soul, that none deserving would refuse to behold.
-
-<br>
-<br>
-
-Ambivalent, I remain about you. Amorphous, my love for you exists. But darling, I promise, it is as ardent and blatant as destiny itself persists.
-            </div>
-        </div>
-    </label>
+      <div class="heart">♥</div>
+    </div>
 
     <div class="hint">p, buka</div>
-<audio id="song" controls loop>
-  <source src="./Salut%20d%27%20amour,%20Op.%2012_spotdown.org.mp3" type="audio/mpeg">
-</audio>
-    <audio controls autoplay loop>
-        <source src="Salut d' amour, Op. 12_spotdown.org.mp3" type="audio/mpeg">
+
+    <!-- penting: id="song" dan pakai yang encoded aja -->
+    <audio id="song" controls loop>
+      <source src="./Salut%20d%27%20amour,%20Op.%2012_spotdown.org.mp3" type="audio/mpeg" />
     </audio>
-</div>
-<script src="./iyhenveanselm.js"></script>
+  </div>
+
+  <!-- JS kamu -->
+  <script src="./iyhenveanselm.js"></script>
 </body>
 </html>
-
-
