@@ -66,7 +66,7 @@ h2 {
   color: #4e63c3;
   font-size: 12px;
   line-height: 1.45;
-  transition: bottom 1s cubic-bezier(.25,.8,.25,1);
+  transition: bottom 1s cubic-bezier(.25, .8, .25, 1);
   z-index: 2;
   overflow-y: auto;
 }
@@ -81,7 +81,7 @@ h2 {
   z-index: 5;
 }
 
-/* OPEN STATE (pakai class dari JS) */
+/* ✅ OPEN STATE (versi JS) */
 .envelope.open .flap {
   transform: rotateX(180deg);
 }
